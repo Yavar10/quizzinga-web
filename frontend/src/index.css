@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+/* ═══════════════════════════════════════════
+   QUIZZINGA — Design System
+   Swiss Editorial / Museum Exhibition
+   ═══════════════════════════════════════════ */
+
+@theme {
+  --color-bg: #000000;
+  --color-fg: #FFFFFF;
+  --color-accent: #5A45FF;
+  --color-muted: #666666;
+  --color-subtle: #1a1a1a;
+  --color-grid: #222222;
+
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", "IBM Plex Mono", monospace;
+  --font-display: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+/* ═══════════════════════════════════════════
+   BASE RESET
+   ═══════════════════════════════════════════ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  cursor: default;
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-fg);
+}
+
+/* ═══════════════════════════════════════════
+   TYPOGRAPHY SCALE
+   ═══════════════════════════════════════════ */
+
+.text-hero {
+  font-size: clamp(3rem, 8.5vw, 9rem);
+  font-weight: 900;
+  line-height: 0.88;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  font-family: var(--font-display);
+}
+
+.text-meta {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.text-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.text-body {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.55);
+  max-width: 32ch;
+  font-weight: 300;
+}
+
+/* ═══════════════════════════════════════════
+   INTERACTIVE CURSOR
+   ═══════════════════════════════════════════ */
+
+.cursor-crosshair-hover:hover {
+  cursor: crosshair;
+}
+
+/* ═══════════════════════════════════════════
+   SCROLL BAR
+   ═══════════════════════════════════════════ */
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-subtle);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-muted);
+}
