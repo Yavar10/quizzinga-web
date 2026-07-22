@@ -14,7 +14,7 @@ const Hero = () => {
   return (
     <section
       ref={containerRef}
-      className="relative min-h-screen flex items-center overflow-hidden bg-bg pt-20"
+      className="relative min-h-screen flex items-center overflow-hidden bg-bg pt-20 mt-24 md:mt-28 rounded-t-3xl md:rounded-t-[3rem]"
     >
       {/* ── DESKTOP LAYOUT ── */}
       <div className="absolute inset-0 hidden md:flex items-center justify-end z-0 pointer-events-none">
@@ -71,30 +71,25 @@ const Hero = () => {
       </div>
 
       {/* ── MOBILE LAYOUT (True Overlap) ── */}
-      <div className="absolute inset-0 md:hidden flex items-center justify-center pointer-events-none mt-20">
+      <div className="absolute inset-0 md:hidden pointer-events-none">
         <motion.div
-          className="w-full h-full flex items-center justify-center px-4"
+          className="h-full w-full"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
         >
-          <div className="relative w-full max-w-[400px]">
-            {/* Background Image */}
-            <img
-              src="/logo.png"
-              alt="Quizzinga Logo Background"
-              className="w-full h-auto object-contain opacity-70 drop-shadow-[0_0_50px_rgba(90,69,255,0.4)]"
-            />
-            
-            {/* Text Overlay exactly on top */}
-            <div className="absolute inset-0 flex flex-col items-center justify-center z-10 drop-shadow-[0_10px_20px_rgba(0,0,0,0.8)]">
-              <span className="text-[12vw] sm:text-[4rem] font-black uppercase text-white tracking-tighter" style={{ fontFamily: 'var(--font-display)', lineHeight: 0.9 }}>
-                QUIZZINGA
-              </span>
-              <span className="text-[12vw] sm:text-[4rem] font-black uppercase text-white tracking-tighter" style={{ fontFamily: 'var(--font-display)', lineHeight: 0.9 }}>
-                KIET<span className="text-accent">.</span>
-              </span>
-            </div>
+          <img
+            src="/logo.png"
+            alt="Quizzinga poster"
+            className="h-full w-full object-cover object-top"
+          />
+          <div className="absolute inset-x-0 top-8 z-10 px-3 text-left">
+            <span className="block text-[12vw] font-black uppercase leading-[0.88] tracking-tight text-white">
+              QUIZZINGA
+            </span>
+            <span className="block text-[12vw] font-black uppercase leading-[0.88] tracking-tight text-white">
+              KIET<span className="text-accent">.</span>
+            </span>
           </div>
         </motion.div>
       </div>
