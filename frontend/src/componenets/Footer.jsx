@@ -138,7 +138,7 @@ const Footer = () => {
               The official quiz club of KIET Group of Institutions. We are dedicated to fostering a community of intellectual growth and fierce competition.
             </p>
             <p className="text-[#5A45FF] text-[0.65rem] tracking-[0.2em] uppercase font-bold font-mono mt-auto">
-              EST. 20XX
+              EST. 2015
             </p>
           </div>
 
@@ -212,7 +212,7 @@ const Footer = () => {
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Cookies Preferences</a>
           </div>
-          <span className="text-white/20">© 2024 QUIZZINGA</span>
+          <span className="text-white/20">© 2026 QUIZZINGA</span>
         </div>
       </div>
       

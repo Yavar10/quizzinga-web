@@ -22,21 +22,21 @@ const TEAM = {
     name: "Nitin Pandey",
     role: "Administrative Head",
     image:
-      "https://res.cloudinary.com/etel6ymb/image/upload/v1784831931/27928334-e772-4d6c-b3aa-7955708c6adc.png",
+      "https://res.cloudinary.com/etel6ymb/image/upload/v1784833861/WhatsApp_Image_2026-07-23_at_21.11.56_fy7boa.jpg",
   },
 
   graphics: {
     name: "Yuvraj Patel",
     role: "Graphics Lead",
     image:
-      "https://images.unsplash.com/photo-1504593811423-6dd665756598?q=80&w=1200&auto=format&fit=crop",
+      "https://i.pinimg.com/736x/a6/fe/ad/a6fead50aca3f8191cc6c54ef904f15d.jpg",
   },
 
   pr: [
     {
       name: "Arush Gupta",
       role: "PR Lead",
-      image: "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?q=80&w=1200&auto=format&fit=crop",
+      image: "https://i.pinimg.com/736x/c3/8f/13/c38f13a73824433ae4763adbb9be4b8c.jpg",
     },
     {
       name: "Shorya Mittal",
@@ -49,12 +49,12 @@ const TEAM = {
     {
       name: "Aditya Upadhyay",
       role: "Events Lead",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1200&auto=format&fit=crop",
+      image: "https://i.pinimg.com/736x/21/ce/13/21ce13067d40c83a1fabd5f10b7873a8.jpg",
     },
     {
       name: "Suryansh Dwivedi",
       role: "Events Lead",
-      image: "https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=1200&auto=format&fit=crop",
+      image: "https://i.pinimg.com/736x/32/3e/da/323edaa152e42e7c9917fa1a1f566e88.jpg",
     },
   ],
 
@@ -62,12 +62,12 @@ const TEAM = {
     {
       name: "Adarsh Singh",
       role: "Operations Lead",
-      image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=1200&auto=format&fit=crop",
+      image: "https://i.pinimg.com/736x/bd/94/57/bd945736f19d52311e9185c6aa80f717.jpg",
     },
     {
       name: "Akhil Yadav",
       role: "Operations Lead",
-      image: "https://images.unsplash.com/photo-1513910367299-bce8d8a0ebf6?q=80&w=1200&auto=format&fit=crop",
+      image: "https://i.pinimg.com/736x/f7/25/bb/f725bbe29df866d6159c43dc5271b13f.jpg",
     },
   ],
 };
@@ -123,7 +123,7 @@ export default function Crew() {
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105 will-change-transform"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent pointer-events-none transition-opacity duration-700 group-hover:opacity-100" />
-            <div className="absolute inset-0 p-8 flex flex-col justify-end pointer-events-none">
+            <div className="absolute inset-x-0 bottom-0 p-8 pt-12 flex flex-col justify-end pointer-events-none backdrop-blur-[2px] bg-gradient-to-t from-black/60 to-transparent">
               <p className="text-[#5A45FF] uppercase text-xs tracking-[0.3em] mb-2 drop-shadow-md">
                 {TEAM.head.role}
               </p>
@@ -175,7 +175,7 @@ export default function Crew() {
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105 will-change-transform"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent pointer-events-none transition-opacity duration-700 group-hover:opacity-100" />
-              <div className="absolute inset-0 p-8 flex flex-col justify-end pointer-events-none">
+              <div className="absolute inset-x-0 bottom-0 p-8 pt-12 flex flex-col justify-end pointer-events-none backdrop-blur-[2px] bg-gradient-to-t from-black/60 to-transparent">
                 <p className="text-[#5A45FF] uppercase text-xs tracking-[0.3em] mb-2 drop-shadow-md">
                   {TEAM.events[0].role}
                 </p>
@@ -191,7 +191,7 @@ export default function Crew() {
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105 will-change-transform"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent pointer-events-none transition-opacity duration-700 group-hover:opacity-100" />
-              <div className="absolute inset-0 p-8 flex flex-col justify-end pointer-events-none">
+              <div className="absolute inset-x-0 bottom-0 p-8 pt-12 flex flex-col justify-end pointer-events-none backdrop-blur-[2px] bg-gradient-to-t from-black/60 to-transparent">
                 <p className="text-[#5A45FF] uppercase text-xs tracking-[0.3em] mb-2 drop-shadow-md">
                   {TEAM.events[1].role}
                 </p>
@@ -210,7 +210,7 @@ export default function Crew() {
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105 will-change-transform"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent pointer-events-none transition-opacity duration-700 group-hover:opacity-100" />
-            <div className="absolute inset-0 p-8 flex flex-col justify-end pointer-events-none">
+            <div className="absolute inset-x-0 bottom-0 p-8 pt-12 flex flex-col justify-end pointer-events-none backdrop-blur-[2px] bg-gradient-to-t from-black/60 to-transparent">
               <p className="text-[#5A45FF] uppercase text-xs tracking-[0.3em] mb-2 drop-shadow-md">
                 {TEAM.tech.role}
               </p>
@@ -241,7 +241,7 @@ export default function Crew() {
           {/* Bottom Left */}
           <div className="col-span-12 md:col-span-6 lg:col-span-3 row-span-3 rounded-[30px] bg-[#5A45FF] p-8 flex flex-col justify-between">
             <span className="uppercase tracking-[0.3em] text-xs opacity-80">
-              Since 2024
+              Since 2015
             </span>
             <div>
               <h2 className="text-7xl lg:text-8xl font-black leading-none">
@@ -262,7 +262,7 @@ export default function Crew() {
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105 will-change-transform"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent pointer-events-none transition-opacity duration-700 group-hover:opacity-100" />
-              <div className="absolute inset-0 p-8 flex flex-col justify-end pointer-events-none">
+              <div className="absolute inset-x-0 bottom-0 p-8 pt-12 flex flex-col justify-end pointer-events-none backdrop-blur-[2px] bg-gradient-to-t from-black/60 to-transparent">
                 <p className="text-[#5A45FF] uppercase text-xs tracking-[0.3em] mb-2 drop-shadow-md">
                   {TEAM.pr[0].role}
                 </p>
@@ -278,7 +278,7 @@ export default function Crew() {
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105 will-change-transform"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent pointer-events-none transition-opacity duration-700 group-hover:opacity-100" />
-              <div className="absolute inset-0 p-8 flex flex-col justify-end pointer-events-none">
+              <div className="absolute inset-x-0 bottom-0 p-8 pt-12 flex flex-col justify-end pointer-events-none backdrop-blur-[2px] bg-gradient-to-t from-black/60 to-transparent">
                 <p className="text-[#5A45FF] uppercase text-xs tracking-[0.3em] mb-2 drop-shadow-md">
                   {TEAM.pr[1].role}
                 </p>
@@ -297,7 +297,7 @@ export default function Crew() {
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105 will-change-transform"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent pointer-events-none transition-opacity duration-700 group-hover:opacity-100" />
-            <div className="absolute inset-0 p-8 flex flex-col justify-end pointer-events-none">
+            <div className="absolute inset-x-0 bottom-0 p-8 pt-12 flex flex-col justify-end pointer-events-none backdrop-blur-[2px] bg-gradient-to-t from-black/60 to-transparent">
               <p className="text-[#5A45FF] uppercase text-xs tracking-[0.3em] mb-2 drop-shadow-md">
                 {TEAM.admin.role}
               </p>
@@ -337,7 +337,7 @@ export default function Crew() {
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105 will-change-transform"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent pointer-events-none transition-opacity duration-700 group-hover:opacity-100" />
-              <div className="absolute inset-0 p-8 flex flex-col justify-end pointer-events-none">
+              <div className="absolute inset-x-0 bottom-0 p-8 pt-12 flex flex-col justify-end pointer-events-none backdrop-blur-[2px] bg-gradient-to-t from-black/60 to-transparent">
                 <p className="text-[#5A45FF] uppercase text-xs tracking-[0.3em] mb-2 drop-shadow-md">
                   {TEAM.operations[0].role}
                 </p>
@@ -353,7 +353,7 @@ export default function Crew() {
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105 will-change-transform"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent pointer-events-none transition-opacity duration-700 group-hover:opacity-100" />
-              <div className="absolute inset-0 p-8 flex flex-col justify-end pointer-events-none">
+              <div className="absolute inset-x-0 bottom-0 p-8 pt-12 flex flex-col justify-end pointer-events-none backdrop-blur-[2px] bg-gradient-to-t from-black/60 to-transparent">
                 <p className="text-[#5A45FF] uppercase text-xs tracking-[0.3em] mb-2 drop-shadow-md">
                   {TEAM.operations[1].role}
                 </p>
@@ -372,7 +372,7 @@ export default function Crew() {
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105 will-change-transform"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent pointer-events-none transition-opacity duration-700 group-hover:opacity-100" />
-            <div className="absolute inset-0 p-8 flex flex-col justify-end pointer-events-none">
+            <div className="absolute inset-x-0 bottom-0 p-8 pt-12 flex flex-col justify-end pointer-events-none backdrop-blur-[2px] bg-gradient-to-t from-black/60 to-transparent">
               <p className="text-[#5A45FF] uppercase text-xs tracking-[0.3em] mb-2 drop-shadow-md">
                 {TEAM.graphics.role}
               </p>

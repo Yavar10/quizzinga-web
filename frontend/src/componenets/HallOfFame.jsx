@@ -8,7 +8,7 @@ const CHAMPIONS = [
     title: "THE ARCHITECT",
     year: "2023",
     image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop",
+      "https://i.pinimg.com/736x/6b/c1/9c/6bc19ccc6970927c6f64cb629b063bea.jpg",
     stats: "WINNER — NEO-TOKYO REGIONALS",
   },
   {
@@ -17,7 +17,7 @@ const CHAMPIONS = [
     title: "THE ORACLE",
     year: "2023",
     image:
-      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop",
+      "https://i.pinimg.com/736x/e5/d2/44/e5d2447d699dddb52d12f974ff43e0a1.jpg",
     stats: "CHAMPION — BERLIN SUMMIT",
   },
   {
@@ -26,7 +26,7 @@ const CHAMPIONS = [
     title: "THE TACTICIAN",
     year: "2024",
     image:
-      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop",
+      "https://i.pinimg.com/736x/52/da/35/52da35ddfb867f62f07eb942a64056aa.jpg",
     stats: "WINNER — NYC GRID FINALS",
   },
 ];
