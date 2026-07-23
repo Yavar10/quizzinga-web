@@ -22,7 +22,7 @@ const TEAM = {
     name: "Nitin Pandey",
     role: "Administrative Head",
     image:
-      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1200&auto=format&fit=crop",
+      "https://res.cloudinary.com/etel6ymb/image/upload/v1784831931/27928334-e772-4d6c-b3aa-7955708c6adc.png",
   },
 
   graphics: {
@@ -41,7 +41,7 @@ const TEAM = {
     {
       name: "Shorya Mittal",
       role: "PR Lead",
-      image: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=1200&auto=format&fit=crop",
+      image: "https://res.cloudinary.com/etel6ymb/image/upload/v1784832729/fb9f96be-0d8b-4460-bbfa-a5ba2829c8f9.jpg",
     },
   ],
 
