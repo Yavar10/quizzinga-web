@@ -212,7 +212,17 @@ const Footer = () => {
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Cookies Preferences</a>
           </div>
-          <span className="text-white/20">© 2026 QUIZZINGA</span>
+          
+          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
+            <div className="flex items-center gap-2">
+              <span className="text-white/20">Made by</span>
+              <a href="https://github.com/Yavar10" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-white transition-colors group">
+                <img src="https://github.com/Yavar10.png" alt="Yavar10" className="w-4 h-4 rounded-full border border-white/10 group-hover:border-white/30 transition-colors" />
+                <span className="text-white/50 group-hover:text-white transition-colors">Yavar10</span>
+              </a>
+            </div>
+            <span className="text-white/20">© 2026 QUIZZINGA</span>
+          </div>
         </div>
       </div>
       
