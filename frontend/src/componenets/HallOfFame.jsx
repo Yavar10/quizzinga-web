@@ -139,74 +139,11 @@ export default function HallOfFame() {
         <div className="md:hidden">
           {/* Sticky Exhibition */}
 
-          <div className="sticky top-20 z-30">
-            <div className="relative overflow-hidden border-y border-white/10 bg-black">
-              <AnimatePresence mode="wait">
-                <motion.img
-                  key={activeMobile}
-                  src={CHAMPIONS[activeMobile].image}
-                  initial={{
-                    opacity: 0,
-                    scale: 1.08,
-                  }}
-                  animate={{
-                    opacity: 0.8,
-                    scale: 1,
-                  }}
-                  exit={{
-                    opacity: 0,
-                    scale: 0.96,
-                  }}
-                  transition={{
-                    duration: 0.55,
-                  }}
-                  className="h-[42vh] w-full object-cover grayscale"
-                />
-              </AnimatePresence>
 
-              <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-black/10 to-transparent" />
-
-              <motion.div
-                key={activeMobile + "year"}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 0.08 }}
-                exit={{ opacity: 0 }}
-                className="absolute right-4 top-2 text-[8rem] font-black leading-none text-white"
-                style={{ fontFamily: "var(--font-display)" }}
-              >
-                {CHAMPIONS[activeMobile].year}
-              </motion.div>
-
-              <div className="absolute bottom-6 left-6">
-                <motion.p
-                  key={activeMobile + "title"}
-                  initial={{ y: 12, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  exit={{ y: -12, opacity: 0 }}
-                  transition={{ duration: .3 }}
-                  className="font-mono text-[11px] uppercase tracking-[0.3em] text-[#5A45FF]"
-                >
-                  {CHAMPIONS[activeMobile].title}
-                </motion.p>
-
-                <motion.h3
-                  key={activeMobile + "name"}
-                  initial={{ y: 20, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  exit={{ y: -20, opacity: 0 }}
-                  transition={{ duration: .35 }}
-                  className="mt-2 text-4xl font-black uppercase leading-none text-white"
-                  style={{ fontFamily: "var(--font-display)" }}
-                >
-                  {CHAMPIONS[activeMobile].name}
-                </motion.h3>
-              </div>
-            </div>
-          </div>
 
           {/* Exhibition List */}
 
-          <div className="pt-12">
+          <div className="pt-4">
             {CHAMPIONS.map((champ, index) => (
               <button
                 key={champ.id}
@@ -222,6 +159,37 @@ export default function HallOfFame() {
                     duration: .35,
                   }}
                 >
+                  <AnimatePresence>
+                    {activeMobile === index && (
+                      <motion.div
+                        initial={{
+                          opacity: 0,
+                          height: 0,
+                        }}
+                        animate={{
+                          opacity: 1,
+                          height: "auto",
+                        }}
+                        exit={{
+                          opacity: 0,
+                          height: 0,
+                        }}
+                        transition={{
+                          duration: .3,
+                        }}
+                        className="overflow-hidden"
+                      >
+                        <div className="mb-6 relative overflow-hidden rounded-lg">
+                          <img
+                            src={champ.image}
+                            alt={champ.name}
+                            className="h-[40vh] w-full object-cover grayscale opacity-90"
+                          />
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+
                   <div
                     className="text-[16vw] font-black uppercase leading-[0.82] tracking-tight"
                     style={{ fontFamily: "var(--font-display)" }}
