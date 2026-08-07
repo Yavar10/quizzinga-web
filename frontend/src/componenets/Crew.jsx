@@ -49,12 +49,12 @@ const TEAM = {
     {
       name: "Aditya Upadhyay",
       role: "Events Lead",
-      image: "https://i.pinimg.com/736x/21/ce/13/21ce13067d40c83a1fabd5f10b7873a8.jpg",
+      image: "https://res.cloudinary.com/etel6ymb/image/upload/v1786073876/Aditya_Upadhyay_wtdtcw.png",
     },
     {
       name: "Suryansh Dwivedi",
       role: "Events Lead",
-      image: "https://i.pinimg.com/736x/32/3e/da/323edaa152e42e7c9917fa1a1f566e88.jpg",
+      image: "https://res.cloudinary.com/etel6ymb/image/upload/v1786073877/Suryansh_Dwivedi_imocs3.jpg",
     },
   ],
 
@@ -62,12 +62,12 @@ const TEAM = {
     {
       name: "Adarsh Singh",
       role: "Operations Lead",
-      image: "https://i.pinimg.com/736x/bd/94/57/bd945736f19d52311e9185c6aa80f717.jpg",
+      image: "https://res.cloudinary.com/etel6ymb/image/upload/v1786073876/Screenshot_20260731-144646_2_plqms1.jpg",
     },
     {
       name: "Akhil Yadav",
       role: "Operations Lead",
-      image: "https://i.pinimg.com/736x/f7/25/bb/f725bbe29df866d6159c43dc5271b13f.jpg",
+      image: "https://res.cloudinary.com/etel6ymb/image/upload/v1786073875/Akhil_Kumar_Image_hoc5yr.jpg",
     },
   ],
 };

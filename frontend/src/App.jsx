@@ -1,13 +1,13 @@
-import React, { useEffect } from 'react'
-import Lenis from 'lenis'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import Navbar from './componenets/Navbar'
-import Hero from './componenets/Hero'
-import HallOfFame from './componenets/HallOfFame'
-import Events from './componenets/Events'
+import Lenis from 'lenis'
+import { useEffect } from 'react'
 import Crew from './componenets/Crew'
+import Events from './componenets/Events'
 import Footer from './componenets/Footer'
+import HallOfFame from './componenets/HallOfFame'
+import Hero from './componenets/Hero'
+import Navbar from './componenets/Navbar'
 
 gsap.registerPlugin(ScrollTrigger)
 
