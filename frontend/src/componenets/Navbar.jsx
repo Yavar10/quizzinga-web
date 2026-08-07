@@ -46,14 +46,6 @@ export default function Navbar() {
 
           {/* Right Side */}
           <div className="flex items-center gap-2 md:justify-self-end">
-            {/* Burger */}
-            <button
-              onClick={() => setOpen(!open)}
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition hover:bg-white/10 md:hidden"
-            >
-              {open ? <X size={18} /> : <Menu size={18} />}
-            </button>
-
             {/* CTA */}
             <a
               href="#join"
@@ -62,6 +54,14 @@ export default function Navbar() {
               <span>Enter Arena</span>
               <ArrowUpRight size={15} strokeWidth={2} />
             </a>
+            {/* Burger */}
+            <button
+              onClick={() => setOpen(!open)}
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition hover:bg-white/10 md:hidden"
+            >
+              {open ? <X size={18} /> : <Menu size={18} />}
+            </button>
+
           </div>
         </div>
 
@@ -78,7 +78,7 @@ export default function Navbar() {
               }}
               className="absolute left-0 right-0 top-[calc(100%+12px)] md:hidden"
             >
-              <div className="overflow-hidden rounded-3xl border border-white/10 bg-black/80 backdrop-blur-xl shadow-[0_10px_40px_rgba(0,0,0,0.35)]">
+              <div className="overflow-hidden rounded-4xl border border-white/10 bg-black/80 backdrop-blur-xl shadow-[0_10px_40px_rgba(0,0,0,0.35)]">
                 {links.map((link, index) => (
                   <motion.a
                     key={link.name}
