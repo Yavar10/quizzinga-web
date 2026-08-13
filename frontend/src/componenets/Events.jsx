@@ -12,7 +12,7 @@ const EVENTS = [
   },
   {
     id: 2,
-    date: 'TO BE ANNOUNCED',
+    date: 'SO ON',
     status: 'TO BE ANNOUNCED',
     title: 'MELA CHAO 2.0',
     location: 'TO BE ANNOUNCED',
@@ -20,7 +20,7 @@ const EVENTS = [
   },
   {
     id: 3,
-    date: 'TO BE ANNOUNCED',
+    date: 'SO ON',
     status: 'TO BE ANNOUNCED',
     title: 'PRABUDDHA',
     location: 'TO BE ANNOUNCED',
