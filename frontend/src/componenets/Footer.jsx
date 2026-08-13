@@ -54,7 +54,7 @@ const Footer = () => {
   const bandFontSize = 'clamp(2rem, 5.5vw, 5.5rem)';
 
   return (
-    <footer className="relative w-full bg-[#050505] overflow-hidden select-none pt-24 md:pt-32">
+    <footer className="relative w-full bg-bg overflow-hidden select-none pt-24 md:pt-32">
       
       {/* ── THE OLD MARQUEE (CRISSCROSS BANDS) ── */}
       <div className="relative overflow-hidden w-full mb-24 md:mb-40">
@@ -62,7 +62,7 @@ const Footer = () => {
           className="relative"
           style={{ height: 'clamp(120px, 18vw, 240px)' }}
         >
-          <div className="absolute inset-0 bg-[#050505]" />
+          <div className="absolute inset-0 bg-bg" />
           
           {/* Band 1 — behind, rotated clockwise */}
           <div
@@ -73,7 +73,7 @@ const Footer = () => {
               className="bg-white w-full py-1 md:py-2"
               style={{ fontSize: bandFontSize, lineHeight: 1.1 }}
             >
-              <Marquee direction="left" speed={25} className="text-[#050505]">
+              <Marquee direction="left" speed={25} className="text-bg">
                 <BandContent items={BAND} />
               </Marquee>
             </div>
@@ -149,7 +149,7 @@ const Footer = () => {
             <ul className="space-y-5">
               {WHAT_WE_DO.map((item, idx) => (
                 <li key={idx} className="flex items-center gap-5 group cursor-pointer">
-                  <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/40 group-hover:bg-white group-hover:text-[#050505] transition-all duration-300 shrink-0">
+                  <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/40 group-hover:bg-white group-hover:text-bg transition-all duration-300 shrink-0">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-5">
                       {item.icon}
                     </svg>
@@ -183,7 +183,7 @@ const Footer = () => {
                 <a
                   key={s.label}
                   href={s.href}
-                  className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-[0.65rem] font-bold tracking-[0.2em] text-white/50 hover:bg-white hover:text-[#050505] transition-all duration-300 font-mono shrink-0"
+                  className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-[0.65rem] font-bold tracking-[0.2em] text-white/50 hover:bg-white hover:text-bg transition-all duration-300 font-mono shrink-0"
                 >
                   {s.label}
                 </a>
@@ -205,7 +205,7 @@ const Footer = () => {
       </div>
 
       {/* ── BOTTOM BAR ── */}
-      <div className="relative z-20 border-t border-white/[0.05] bg-[#050505]">
+      <div className="relative z-20 border-t border-white/[0.05] bg-bg">
         <div className="max-w-[1400px] mx-auto px-6 md:px-12 py-6 flex flex-col md:flex-row items-center justify-between gap-6 text-[0.6rem] tracking-[0.15em] uppercase text-white/30 font-bold font-mono">
           <div className="flex items-center gap-8">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>

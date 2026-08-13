@@ -4,33 +4,33 @@ import { motion } from 'framer-motion';
 const EVENTS = [
   {
     id: 1,
-    date: '24 OCT',
-    status: 'UPCOMING',
-    title: 'THE PROVING GROUNDS',
-    location: 'MAIN AUDITORIUM',
-    description: 'The ultimate test of wits. Open to all years. Cash prize pool.',
+    date: '25 JULY',
+    status: 'CONCLUDED',
+    title: 'THE RIGGED QUIZ',
+    location: 'ONLINE',
+    description: 'An internet and pop-culture quiz, where 350+ participents competed online.',
   },
   {
     id: 2,
-    date: '15 NOV',
-    status: 'REGISTRATION OPEN',
-    title: 'TECH TRIVIA NIGHT',
-    location: 'CS BLOCK',
-    description: 'A deep dive into tech history, silicon valley lore, and coding trivia.',
+    date: 'TO BE ANNOUNCED',
+    status: 'TO BE ANNOUNCED',
+    title: 'MELA CHAO 2.0',
+    location: 'TO BE ANNOUNCED',
+    description: 'A traditional MELA quiz returns for a re-run',
   },
   {
     id: 3,
-    date: '02 DEC',
-    status: 'ANNOUNCED',
-    title: 'THE ARENA FINALS',
-    location: 'MAIN STAGE',
-    description: 'The year-end championship. Only the top 10 qualifiers advance.',
+    date: 'TO BE ANNOUNCED',
+    status: 'TO BE ANNOUNCED',
+    title: 'PRABUDDHA',
+    location: 'TO BE ANNOUNCED',
+    description: 'The flagship quiz of QUIZZINGA KIET',
   },
 ];
 
 const Events = () => {
   return (
-    <section id="events" className="relative w-full bg-[#050505] py-24 md:py-32 border-t border-white/5">
+    <section id="events" className="relative w-full bg-bg py-24 md:py-32 border-t border-white/5">
       <div className="w-full max-w-[1400px] mx-auto px-6 md:px-12">
         
         {/* Section Header */}
