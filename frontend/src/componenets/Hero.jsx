@@ -26,7 +26,7 @@ const Hero = () => {
           transition={{ duration: 1, delay: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
         >
           <img
-            src="/logo.png"
+            src="https://res.cloudinary.com/etel6ymb/image/upload/v1786958058/logo_v0vwfx.png"
             alt="Quizzinga Logo"
             className="w-full h-auto object-contain drop-shadow-2xl"
           />
