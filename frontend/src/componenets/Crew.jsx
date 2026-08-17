@@ -15,7 +15,7 @@ const TEAM = {
   tech: {
     name: "Mohd Yavar",
     role: "Technical Head",
-    image: "/yav.jpeg",
+    image: "https://res.cloudinary.com/etel6ymb/image/upload/v1784747740/IMG-20260714-WA0007.jpg_w1hrpm.jpg",
   },
 
   admin: {
@@ -29,14 +29,14 @@ const TEAM = {
     name: "Yuvraj Patel",
     role: "Graphics Lead",
     image:
-      "https://i.pinimg.com/736x/a6/fe/ad/a6fead50aca3f8191cc6c54ef904f15d.jpg",
+      "https://res.cloudinary.com/etel6ymb/image/upload/v1786957561/Yuvraj_Patel_bti7yy.jpg",
   },
 
   pr: [
     {
       name: "Arush Gupta",
       role: "PR Lead",
-      image: "https://i.pinimg.com/736x/c3/8f/13/c38f13a73824433ae4763adbb9be4b8c.jpg",
+      image: "https://res.cloudinary.com/etel6ymb/image/upload/v1786957639/arushgay.jpg",
     },
     {
       name: "Shorya Mittal",
@@ -54,7 +54,7 @@ const TEAM = {
     {
       name: "Suryansh Dwivedi",
       role: "Events Lead",
-      image: "https://res.cloudinary.com/etel6ymb/image/upload/v1786073877/Suryansh_Dwivedi_imocs3.jpg",
+      image: "https://res.cloudinary.com/etel6ymb/image/upload/v1786080627/copy_of_suryansh_dwivedi_imocs3.jpg",
     },
   ],
 

@@ -9,6 +9,7 @@ const EVENTS = [
     title: 'THE RIGGED QUIZ',
     location: 'ONLINE',
     description: 'An internet and pop-culture quiz, where 350+ participents competed online.',
+    link: 'https://unstop.com/quiz/the-rigged-quiz-kiet-group-of-institutions-1723771',
   },
   {
     id: 2,
@@ -17,6 +18,7 @@ const EVENTS = [
     title: 'MELA CHAO 2.0',
     location: 'TO BE ANNOUNCED',
     description: 'A traditional MELA quiz returns for a re-run',
+    link: '/events/mela-chao-2',
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ const EVENTS = [
     title: 'PRABUDDHA',
     location: 'TO BE ANNOUNCED',
     description: 'The flagship quiz of QUIZZINGA KIET',
+    link: '/events/prabuddha',
   },
 ];
 
@@ -77,14 +80,29 @@ const Events = () => {
                 </div>
 
                 {/* Arrow CTA */}
-                <div className="w-16 h-16 rounded-full border border-white/20 flex items-center justify-center shrink-0 group-hover:bg-[#5A45FF] group-hover:border-[#5A45FF] transition-all duration-500">
-                  <svg 
-                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="square" strokeLinejoin="miter" 
-                    className="text-white opacity-50 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-500"
+                {evt.link ? (
+                  <a
+                    href={evt.link}
+                    aria-label={`View details for ${evt.title}`}
+                    className="w-16 h-16 rounded-full border border-white/20 flex items-center justify-center shrink-0 group-hover:bg-[#5A45FF] group-hover:border-[#5A45FF] transition-all duration-500"
                   >
-                    <path d="M7 17L17 7M17 7H7M17 7V17" />
-                  </svg>
-                </div>
+                    <svg
+                      width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="square" strokeLinejoin="miter"
+                      className="text-white opacity-50 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-500"
+                    >
+                      <path d="M7 17L17 7M17 7H7M17 7V17" />
+                    </svg>
+                  </a>
+                ) : (
+                  <div className="w-16 h-16 rounded-full border border-white/20 flex items-center justify-center shrink-0 group-hover:bg-[#5A45FF] group-hover:border-[#5A45FF] transition-all duration-500">
+                    <svg
+                      width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="square" strokeLinejoin="miter"
+                      className="text-white opacity-50 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-500"
+                    >
+                      <path d="M7 17L17 7M17 7H7M17 7V17" />
+                    </svg>
+                  </div>
+                )}
               </div>
 
             </div>
