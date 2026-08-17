@@ -208,8 +208,7 @@ const Footer = () => {
       <div className="relative z-20 border-t border-white/[0.05] bg-bg">
         <div className="max-w-[1400px] mx-auto px-6 md:px-12 py-6 flex flex-col md:flex-row items-center justify-between gap-6 text-[0.6rem] tracking-[0.15em] uppercase text-white/30 font-bold font-mono">
           <div className="flex items-center gap-8">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Cookies Preferences</a>
+           
           </div>
           
           <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
@@ -222,6 +221,11 @@ const Footer = () => {
             </div>
             <span className="text-white/20">© 2026 QUIZZINGA</span>
           </div>
+          <div className="flex items-center gap-8">
+           
+          </div>
+
+
         </div>
       </div>
       

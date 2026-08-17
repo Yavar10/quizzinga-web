@@ -1,7 +1,7 @@
 import {
   ArrowUpRight,
   Globe,
-  Sparkles
+  Hourglass
 } from "lucide-react";
 
 const TEAM = {
@@ -152,7 +152,7 @@ export default function Crew() {
 
           {/* Manifesto */}
           <div className="col-span-12 md:col-span-6 lg:col-span-3 row-span-3 rounded-[30px] bg-[#5A45FF] p-8 flex flex-col justify-between">
-            <Sparkles size={26} />
+            <Hourglass size={26} />
             <div>
               <p className="text-xs uppercase tracking-[0.3em] opacity-70 mb-3">
                 Philosophy
