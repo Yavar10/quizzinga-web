@@ -220,20 +220,21 @@ export default function Crew() {
             </div>
           </div>
 
-          {/* Decorative */}
-          <div className="col-span-12 md:col-span-6 lg:col-span-3 row-span-3 rounded-[30px] border border-white/10 bg-white/5 p-8 flex flex-col justify-between">
-            <div className="flex justify-between">
-              <span className="text-xs uppercase tracking-[0.3em] text-white/40">
-                QZ
-              </span>
-              <ArrowUpRight />
-            </div>
-            <div className="flex justify-center flex-grow items-center">
-              <Globe
-                size={110}
-                className="text-[#5A45FF]"
-                strokeWidth={1}
-              />
+           {/* ADMIN */}
+            <div className="col-span-12 md:col-span-6 lg:col-span-3 row-span-3 rounded-[30px] overflow-hidden border border-white/10 bg-white/5 relative group">
+            <img
+              src={TEAM.admin.image}
+              alt={TEAM.admin.name}
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105 will-change-transform"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent pointer-events-none transition-opacity duration-700 group-hover:opacity-100" />
+            <div className="absolute inset-x-0 bottom-0 p-8 pt-12 flex flex-col justify-end pointer-events-none backdrop-blur-[2px] bg-gradient-to-t from-black/60 to-transparent">
+              <p className="text-[#5A45FF] uppercase text-xs tracking-[0.3em] mb-2 drop-shadow-md">
+                {TEAM.admin.role}
+              </p>
+              <h3 className="text-3xl font-black uppercase leading-none drop-shadow-lg">
+                {TEAM.admin.name}
+              </h3>
             </div>
           </div>
 
@@ -289,21 +290,20 @@ export default function Crew() {
             </div>
           </div>
 
-          {/* ADMIN */}
-          <div className="col-span-12 md:col-span-6 lg:col-span-3 row-span-3 rounded-[30px] overflow-hidden border border-white/10 bg-white/5 relative group">
-            <img
-              src={TEAM.admin.image}
-              alt={TEAM.admin.name}
-              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105 will-change-transform"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent pointer-events-none transition-opacity duration-700 group-hover:opacity-100" />
-            <div className="absolute inset-x-0 bottom-0 p-8 pt-12 flex flex-col justify-end pointer-events-none backdrop-blur-[2px] bg-gradient-to-t from-black/60 to-transparent">
-              <p className="text-[#5A45FF] uppercase text-xs tracking-[0.3em] mb-2 drop-shadow-md">
-                {TEAM.admin.role}
-              </p>
-              <h3 className="text-3xl font-black uppercase leading-none drop-shadow-lg">
-                {TEAM.admin.name}
-              </h3>
+         {/* Decorative */}
+        <div className="col-span-12 md:col-span-6 lg:col-span-3 row-span-3 rounded-[30px] border border-white/10 bg-white/5 p-8 flex flex-col justify-between">
+            <div className="flex justify-between">
+              <span className="text-xs uppercase tracking-[0.3em] text-white/40">
+                QZ
+              </span>
+              <ArrowUpRight />
+            </div>
+            <div className="flex justify-center flex-grow items-center">
+              <Globe
+                size={110}
+                className="text-[#5A45FF]"
+                strokeWidth={1}
+              />
             </div>
           </div>
 
