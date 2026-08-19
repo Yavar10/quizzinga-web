@@ -15,7 +15,7 @@ const TEAM = {
   tech: {
     name: "Mohd Yavar",
     role: "Technical Head",
-    image: "https://res.cloudinary.com/etel6ymb/image/upload/v1784747740/IMG-20260714-WA0007.jpg_w1hrpm.jpg",
+    image: "https://res.cloudinary.com/etel6ymb/image/upload/v1787157620/IMG-20260714-WA0007.jpg_w1hrpm.jpg",
   },
 
   admin: {
@@ -150,17 +150,20 @@ export default function Crew() {
             </div>
           </div>
 
-          {/* Manifesto */}
-          <div className="col-span-12 md:col-span-6 lg:col-span-3 row-span-3 rounded-[30px] bg-[#5A45FF] p-8 flex flex-col justify-between">
-            <Hourglass size={26} />
-            <div>
-              <p className="text-xs uppercase tracking-[0.3em] opacity-70 mb-3">
-                Philosophy
+        {/* TECH */}
+          <div className="col-span-12 md:col-span-6 lg:col-span-3 row-span-3 rounded-[30px] overflow-hidden border border-white/10 bg-white/5 relative group">
+            <img
+              src={TEAM.tech.image}
+              alt={TEAM.tech.name}
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105 will-change-transform"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent pointer-events-none transition-opacity duration-700 group-hover:opacity-100" />
+            <div className="absolute inset-x-0 bottom-0 p-8 pt-12 flex flex-col justify-end pointer-events-none backdrop-blur-[2px] bg-gradient-to-t from-black/60 to-transparent">
+              <p className="text-[#5A45FF] uppercase text-xs tracking-[0.3em] mb-2 drop-shadow-md">
+                {TEAM.tech.role}
               </p>
-              <h3 className="text-3xl font-black uppercase leading-tight">
-                Curiosity
-                <br />
-                Wins.
+              <h3 className="text-3xl font-black uppercase leading-none drop-shadow-lg">
+                {TEAM.tech.name}
               </h3>
             </div>
           </div>
@@ -202,20 +205,17 @@ export default function Crew() {
             </div>
           </div>
 
-          {/* TECH */}
-          <div className="col-span-12 md:col-span-6 lg:col-span-3 row-span-3 rounded-[30px] overflow-hidden border border-white/10 bg-white/5 relative group">
-            <img
-              src={TEAM.tech.image}
-              alt={TEAM.tech.name}
-              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-105 will-change-transform"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent pointer-events-none transition-opacity duration-700 group-hover:opacity-100" />
-            <div className="absolute inset-x-0 bottom-0 p-8 pt-12 flex flex-col justify-end pointer-events-none backdrop-blur-[2px] bg-gradient-to-t from-black/60 to-transparent">
-              <p className="text-[#5A45FF] uppercase text-xs tracking-[0.3em] mb-2 drop-shadow-md">
-                {TEAM.tech.role}
+          {/* Manifesto */}
+          <div className="col-span-12 md:col-span-6 lg:col-span-3 row-span-3 rounded-[30px] bg-[#5A45FF] p-8 flex flex-col justify-between">
+            <Hourglass size={26} />
+            <div>
+              <p className="text-xs uppercase tracking-[0.3em] opacity-70 mb-3">
+                Philosophy
               </p>
-              <h3 className="text-3xl font-black uppercase leading-none drop-shadow-lg">
-                {TEAM.tech.name}
+              <h3 className="text-3xl font-black uppercase leading-tight">
+                Curiosity
+                <br />
+                Wins.
               </h3>
             </div>
           </div>
